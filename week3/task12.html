@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navigation Bar</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 10px 20px;
+            color: white;
+        }
+
+        .navbar-brand {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .navbar-menu {
+            display: flex;
+            flex: 1;
+            justify-content: space-around;
+        }
+
+        .navbar-menu a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            font-size: 20px;
+        }
+
+        .navbar-menu a:hover {
+            background-color: #575757;
+            border-radius: 4px;
+        }
+
+        @media (max-width: 768px) {
+            .navbar-menu {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .navbar-menu a {
+                padding: 10px;
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-brand">Amazon</div>
+        <div class="navbar-menu">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+</body>
+</html>

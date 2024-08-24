@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout Example</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            grid-template-columns: 200px 1fr;
+            grid-template-areas: 
+                "header header"
+                "sidebar main"
+                "footer footer";
+            height: 100vh; 
+            overflow: hidden; 
+        }
+
+        header {
+            grid-area: header;
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        aside {
+            grid-area: sidebar;
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-right: 1px solid #ddd;
+            height: 100vh; 
+            position: fixed; 
+            top: 0;
+            left: 0;
+            width: 200px;
+            overflow-y: auto;
+        }
+
+        main {
+            grid-area: main;
+            padding: 15px;
+            margin-left: 200px;
+            overflow-y: auto; 
+        }
+
+        footer {
+            grid-area: footer;
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        @media (max-width: 768px) {
+            body {
+                grid-template-columns: 1fr; 
+                grid-template-areas:
+                    "header"
+                    "main"
+                    "footer";
+            }
+
+            aside {
+                display: none; 
+            }
+
+            main {
+                margin: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Website Header</h1>
+    </header>
+    <aside>
+        <h2>Sidebar</h2>
+        <p>Links and other content go here.</p>
+    </aside>
+    <main>
+        <h2>Main Content Area</h2>
+        <p>This is the main content area. Here you can add articles, images, and other types of content relevant to your website.</p>
+        <p>Additional content can be added here, and it will scroll if it overflows the available space.</p>
+    </main>
+    <footer>
+        <p>Footer Content &copy; 2024 All rights are reserved</p>
+    </footer>
+</body>
+</html>

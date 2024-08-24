@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three-Column Layout</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            overflow: hidden; /* Clearfix */
+        }
+
+        .column {
+            box-sizing: border-box;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        .left-column {
+            float: left;
+            width: 30%;
+            background-color: #e0e0e0;
+        }
+
+        .center-column {
+            float: left;
+            width: 30%;
+            background-color: #d0d0d0;
+        }
+
+        .right-column {
+            float: left;
+            width: 30%;
+            background-color: #c0c0c0;
+        }
+
+        .clearfix::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        @media (max-width: 768px) {
+            .left-column, .center-column, .right-column {
+                float: none;
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .center-column {
+                margin-bottom: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container clearfix">
+        <div class="left-column column">
+            <h2>Left Column</h2>
+            <p>This is the left column content. It will stack vertically on smaller screens.</p>
+        </div>
+
+        <div class="center-column column">
+            <h2>Center Column</h2>
+            <p>This is the center column content. It will stack vertically on smaller screens.</p>
+        </div>
+
+        <div class="right-column column">
+            <h2>Right Column</h2>
+            <p>This is the right column content. It will stack vertically on smaller screens.</p>
+        </div>
+    </div>
+</body>
+</html>

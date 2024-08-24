@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two Floated Columns with Clearfix</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            overflow: hidden; /* Clearfix method */
+        }
+
+        .column {
+            box-sizing: border-box;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        .left-column {
+            float: left;
+            width: 45%;
+            background-color: #e0e0e0;
+        }
+
+        .right-column {
+            float: right;
+            width: 45%;
+            background-color: #d0d0d0;
+        }
+
+        .clearfix::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="container clearfix">
+        <div class="left-column column">
+            <h2>Frontend Technologies</h2>
+            <p>HTML:HTML stands for HyperText Markup Language. It is used to design the front end portion of web pages using markup language. It acts as a skeleton for a website since it is used to make the structure of a website.<br>
+                CSS: Cascading Style Sheets fondly referred to as CSS is a simply designed language intended to simplify the process of making web pages presentable. It is used to style our website.<br>
+                JavaScript: JavaScript is a scripting language used to provide a dynamic behavior to our website.<br>
+                Bootstrap: Bootstrap is a free and open-source tool collection for creating responsive websites and web applications. It is the most popular CSS framework for developing responsive, mobile-first websites. Nowadays, the websites are perfect for all browsers (IE, Firefox, and Chrome) and for all sizes of screens (Desktop, Tablets, Phablets, and Phones).<br></p>
+        </div>
+
+        <div class="right-column column">
+            <h2>Backend Technologies</h2>
+            <p>PHP: PHP is a server-side scripting language designed specifically for web development.<br>
+                Java: Java is one of the most popular and widely used programming languages. It is highly scalable.<br>
+                Python: Python is a programming language that lets you work quickly and integrate systems more efficiently.<br>
+                Node.js: Node.js is an open source and cross-platform runtime environment for executing JavaScript code outside a browser.<br></p>
+        </div>
+    </div>
+</body>
+</html>

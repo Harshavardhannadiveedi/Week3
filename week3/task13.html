@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Table</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .pricing-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .pricing-card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            width: 200px;
+        }
+
+        .pricing-card h2 {
+            margin: 0;
+            font-size: 24px; 
+        }
+
+        .pricing-card .price {
+            font-size: 32px;
+            color: #4CAF50;
+        }
+
+        .pricing-card button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px; 
+        }
+
+        .pricing-card button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="pricing-container">
+        <div class="pricing-card">
+            <h2>Basic</h2>
+            <p class="price">₹199</p>
+            <p>per month</p>
+            <button>Choose Plan</button>
+        </div>
+
+        <div class="pricing-card">
+            <h2>Standard</h2>
+            <p class="price">₹399</p>
+            <p>per month</p>
+            <button>Choose Plan</button>
+        </div>
+
+        <div class="pricing-card">
+            <h2>Premium</h2>
+            <p class="price">₹599</p>
+            <p>per month</p>
+            <button>Choose Plan</button>
+        </div>
+    </div>
+</body>
+</html>

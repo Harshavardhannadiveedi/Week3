@@ -1,0 +1,27 @@
+.container {
+    width: 100%;
+    max-width: 1200px; 
+    margin: 0 auto; 
+    background-color: #f4f4f4;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.sidebar {
+    width: 30%; 
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 5%;
+}
+.main-content {
+    width: 65%; 
+    background-color: #fff;
+    color: #333;
+    padding: 20px;
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top;
+}

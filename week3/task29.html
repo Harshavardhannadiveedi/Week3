@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Animation</title>
+    <style>
+        .moving-box {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            position: relative; 
+            animation: moveRight 5s infinite; 
+        }
+
+        @keyframes moveRight {
+            0% {
+                left: 0; 
+                background-color: blue;
+            }
+            50%{
+                left: 50%;
+                background-color: aquamarine;
+            }
+            100% {
+                left: 100%;
+                background-color: rgb(63, 248, 88);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="moving-box"></div>
+</body>
+</html>

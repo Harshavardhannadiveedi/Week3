@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Sidebar Example</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .sidebar {
+            flex: 0 0 250px;
+            position: sticky;
+            top: 20px; /* Distance from the top of the viewport */
+        }
+
+        .sidebar nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .sidebar nav ul li {
+            margin-bottom: 10px;
+        }
+
+        .sidebar nav ul li a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px;
+            display: block;
+            background-color: #f4f4f4;
+            border-radius: 4px;
+        }
+
+        .sidebar nav ul li a:hover {
+            background-color: #ddd;
+        }
+
+        .content {
+            flex: 1;
+        }
+
+        section {
+            margin-bottom: 50px;
+        }
+
+        section h2 {
+            margin-top: 0;
+        }
+
+        section p {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="#section1">Section 1</a></li>
+                    <li><a href="#section2">Section 2</a></li>
+                    <li><a href="#section3">Section 3</a></li>
+                    <li><a href="#section4">Section 4</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="content">
+            <section id="section1">
+                <h2>Section 1</h2>
+                <p>Content for section 1...</p>
+                <p>More content...</p>
+            </section>
+            <section id="section2">
+                <h2>Section 2</h2>
+                <p>Content for section 2...</p>
+                <p>More content...</p>
+            </section>
+            <section id="section3">
+                <h2>Section 3</h2>
+                <p>Content for section 3...</p>
+                <p>More content...</p>
+            </section>
+            <section id="section4">
+                <h2>Section 4</h2>
+                <p>Content for section 4...</p>
+                <p>More content...</p>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

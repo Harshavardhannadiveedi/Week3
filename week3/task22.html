@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizontal Scrolling Gallery</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .gallery-container {
+            width: 80%;
+            overflow-x: auto;
+            white-space: nowrap; 
+            padding: 10px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+        }
+
+        .gallery-item {
+            display: inline-block;
+            width: 250px;
+            height: 350px;
+            margin-right: 10px;
+            background-size: cover;
+            background-position: center;
+            border: 1px solid #ddd;
+        }
+        .gallery-item:nth-child(1) { background-image: url('https://upload.wikimedia.org/wikipedia/en/3/30/Ant-Man_and_the_Wasp_Quantumania_poster.jpg'); }
+        .gallery-item:nth-child(2) { background-image: url('https://m.media-amazon.com/images/M/MV5BMTczNTI2ODUwOF5BMl5BanBnXkFtZTcwMTU0NTIzMw@@._V1_FMjpg_UX1000_.jpg'); }
+        .gallery-item:nth-child(3) { background-image: url('https://upload.wikimedia.org/wikipedia/en/2/21/Web_of_Spider-Man_Vol_1_129-1.png'); }
+        .gallery-item:nth-child(4) { background-image: url('https://via.placeholder.com/200x150?text=Image+4'); }
+        .gallery-item:nth-child(5) { background-image: url('https://via.placeholder.com/200x150?text=Image+5'); }
+        .gallery-item:nth-child(6) { background-image: url('https://via.placeholder.com/200x150?text=Image+6'); }
+    </style>
+</head>
+<body>
+    <div class="gallery-container">
+        <div class="gallery-item"></div>
+        <div class="gallery-item"></div>
+        <div class="gallery-item"></div>
+        <div class="gallery-item"></div>
+        <div class="gallery-item"></div>
+        <div class="gallery-item"></div>
+    </div>
+</body>
+</html>

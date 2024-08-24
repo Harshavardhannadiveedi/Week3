@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrollable Content Box</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .content-box {
+            width: 300px;
+            height: 200px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            background-color: white;
+            overflow: auto;
+        }
+
+        .content-box p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="content-box">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper eleifend. Donec efficitur mollis dui, nec egestas mi vestibulum vel. Quisque a lacinia lectus. Donec fringilla ante sed elit scelerisque, non feugiat turpis feugiat. Curabitur tempus justo ut lectus vehicula, sed gravida justo tempus. Morbi pharetra justo nec orci hendrerit, non interdum mi dapibus.</p>
+    </div>
+</body>
+</html>
